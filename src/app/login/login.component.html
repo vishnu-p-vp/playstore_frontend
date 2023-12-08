@@ -1,0 +1,48 @@
+
+
+
+<div class="wrapper">
+    <div class="form">
+        <header>Login</header>
+        <br>
+        <!-- {/* <form action=" "> */} -->
+            <form #loginForm="ngForm" (ngSubmit)="login(loginForm)">
+            <div class="field email">
+                <div class="input-area">
+                    <input type="text" placeholder="Enter userName"
+                    ngModel
+                    name="userName"
+                    id="userName"
+                    required
+                    />
+                    <i class="icon fas fa-enevelope"></i>
+                </div>
+            </div>
+            
+            <div class="field password">
+                <div class="input-area">
+                    <input type="password" placeholder="Enter your Password"
+                    ngModel
+                    name="userPassword"
+                    id="userPassword"
+                    required
+                    />
+                    <i class="icon fas fa-lock"></i>
+                </div>
+            </div>
+            
+
+            <!-- <Link to="/profile"> -->
+            <!-- {/* <input type="submit"/> */} -->
+            <button type="submit" value="Login" class="btn btn-success" 
+            onClick={checklogin} [disabled]="loginForm.form.invalid"
+            id="liveToastBtn"
+            >Login</button>
+            <!-- </Link> -->
+            <br/><br/>Don't have an account?
+            <!-- <Link to="/signup"> -->
+               <button routerLink="/register"> Sign up </button>
+            <!-- </Link> -->
+        </form>
+    </div>
+</div>

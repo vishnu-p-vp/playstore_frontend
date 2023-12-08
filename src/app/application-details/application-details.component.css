@@ -1,0 +1,27 @@
+.column{
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+
+}
+
+.button{
+    /* background-color: aqua; */
+    border: none;
+    /* color: white; */
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 12px;
+}
+
+.button1{
+border-radius: 50%;
+}
+
+.container{
+    border: 2px solid black;
+    margin-top: 95px;
+}

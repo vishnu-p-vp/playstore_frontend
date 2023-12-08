@@ -1,0 +1,94 @@
+
+
+<div class="wrapper all">
+    <div class="form">
+        <header>Sign Up</header>
+        <br>
+         <form #registerForm="ngForm" (ngSubmit)="register(registerForm)"> 
+            <div class="field name">
+                <div class="input-area">
+                    <input 
+                    type="text" 
+                    ngModel
+                       name="userFirstName"
+                       id="userFirstName"
+                       required
+                    placeholder="First Name" /> 
+                    <i class=" icon fas fa-user"></i>
+                </div>
+            </div>
+            <div class="field name">
+                <div class="input-area">
+                    <input 
+                    type="text"
+                    ngModel
+                    name="userLastName"
+                    id="userLastName" 
+                    placeholder="Last Name"
+                    required /> 
+                    <i class=" icon fas fa-user"></i>
+                </div>
+            </div>
+           
+            <div class="field email">
+                <div class="input-area">
+                    <input type="email" 
+                    ngModel
+                    name="userName"
+                    id="userName"
+                    placeholder="Username"
+                    required/>
+                    <!-- placeholder="Email" -->
+                   
+                    
+                    <i class="icon fas fa-enevelope"></i>
+                </div>
+            </div>
+            <div class="field password">
+                <div class="input-area">
+                    <input type="password"
+                    ngModel
+                    name="userPassword"
+                    id="userPassword"
+                    placeholder="Password"                   
+                    required/>
+                    <i class="icon fas fa-lock"></i>
+                </div>
+            </div>
+            <!-- {/* <div class="field password">
+                <div class="input-area">
+                    <input type="confirm password" placeholder="Confirm Password"/>
+                    <i class="icon fas fa-lock"></i>
+                </div>
+            </div> */} -->
+           
+            
+<!-- 
+            {/* <div class="radio_btn">
+                <input type="radio" value="male" id="male" name="gender" />
+                <label for="male">Male</label>
+                <input type="radio" value="female" d="female" name="gender"/>
+                <label for="female">Female</label>
+            </div> */} -->
+            <!-- <Link to="/profile"> -->
+            <button type="submit" class="btn btn-success" [disabled]="registerForm.form.invalid">Sign up
+             <!-- value="submit" 
+            onClick={createUser} -->
+            
+                
+            </button>
+        <!-- </Link> -->
+     
+    <!-- </div>
+    <div> -->
+    </form>
+    <!-- {/* {users.map((users) => {
+
+})} */} -->
+</div>
+</div>
+
+
+
+
+

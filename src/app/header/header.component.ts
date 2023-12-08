@@ -1,18 +1,17 @@
 import { Component } from '@angular/core';
-import { UserAuthService } from './_services/user-auth.service';
+import { UserAuthService } from '../_services/user-auth.service';
+import { UserService } from '../_services/user.service';
 import { Router } from '@angular/router';
-import { UserService } from './_services/user.service';
-import { CategoryService } from './_services/category.service';
-import { ApplicationService } from './_services/application.service';
+import { CategoryService } from '../_services/category.service';
 import { NgForm } from '@angular/forms';
+import { ApplicationService } from '../_services/application.service';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-header',
+  templateUrl: './header.component.html',
+  styleUrls: ['./header.component.css']
 })
-export class AppComponent {
-  title = 'playstore-angular';
+export class HeaderComponent {
   constructor(
     private userAuthService: UserAuthService,
     private router: Router,
@@ -32,9 +31,6 @@ export class AppComponent {
     this.userAuthService.clear();
     this.router.navigate(['/']);
   }
-
-
-  
 
   public isAdmin() {
     return this.userAuthService.isAdmin();

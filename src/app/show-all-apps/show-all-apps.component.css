@@ -1,0 +1,54 @@
+.carousel-inner
+{
+    height: 70vh;
+    /* height: 537px; */
+}
+
+.banners{
+    margin-bottom: 20px;
+}
+
+
+.rowposter{
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+.card-size{
+    min-height: 300px;
+}
+.card-height{
+    min-height: 150px;
+}
+.rowimg
+{
+    max-height: 100px;
+    object-fit: contain;
+    width: 100%;
+    box-sizing: content-box;
+    transition: transform 450ms;
+    margin-right: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.rowimg:hover
+{
+    transform: scale(1.09);
+    cursor: pointer;
+}
+
+.largeposter{
+    max-height: 300px;
+}
+
+.rowposter::-webkit-scrollbar
+{
+    display: none;
+}
+
+.rowposter{
+    transition: transform 450ms;
+    /* transform: scale(1.09);
+    cursor: pointer; */
+}

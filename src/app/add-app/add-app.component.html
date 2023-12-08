@@ -1,0 +1,65 @@
+
+<div  class="mt-10">
+    <div class="form" class="row" class="mt-5" class ="col-md-6 mx-auto">
+        <header>Add Your Application Here</header>
+        <!-- {/* <form action=" "> */} -->
+            <form #addAppForm="ngForm"
+                (ngSubmit)="addApp(addAppForm)">
+            <div class="field">
+                <div class="input-area">
+                    <input type="text" placeholder="Enter App Name"
+                    [(ngModel)]="app.appName"
+                    name="appName"
+                    />
+                    <i class="icon fas fa-enevelope"></i>
+                </div>
+            </div>
+            
+            <div class="field">
+                <div class="input-area">
+                    <input type="text" placeholder="Enter App Description"
+                    [(ngModel)]="app.appDescription"
+                    name="appDescription"
+                    />
+                    <i class="icon fas fa-enevelope"></i>
+                </div>
+            </div>
+
+            <label for="releaseDate">Release Date</label>
+            <input class="date" type="date" [(ngModel)]="app.releaseDate" name="releaseDate">
+
+            <label for="releaseDate">Category</label>
+            <select class="form-select" aria-label="Default select example" [(ngModel)]="app.categoryName" name="categoryName">
+                <!-- <option selected disabled="true">Category</option> -->
+                <option value="Entertainment">Entertainment</option>
+                <option value="Games">Games</option>
+                <option value="Social">Social</option>
+                <option value="Beauty">Beauty</option>
+                <option value="Shopping">Shopping</option>
+              </select>
+
+              <div class="field">
+                <div class="input-area">
+                    <input type="text" placeholder="App Image URL"
+                    [(ngModel)]="app.appImageUrl"
+                    name="appImageUrl"
+                    />
+                    <i class="icon fas fa-enevelope"></i>
+                </div>
+            </div>
+            
+            <button type="submit">Add</button>
+           
+        </form>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
